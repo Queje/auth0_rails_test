@@ -4,6 +4,7 @@
     <title>Auth0RailsTest</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,6 +14,10 @@
     <%= button_to 'Login', '/auth/auth0', method: :post %>
     <br>
     <%= button_to 'Logout', 'auth/logout', method: :get %>
+    <br>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
     <br>
     <%= yield %>
   </body>
